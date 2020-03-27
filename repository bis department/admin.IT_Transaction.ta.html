@@ -1,0 +1,1374 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <title>Simplic - admin.IT_Transaction</title>
+	    
+<link rel=stylesheet type="text/css" href="details.css">
+<script>
+function setHeaderText( className, text )
+{
+    nsrTitle = parent.header.document.getElementById( 'nsrTitle' );
+    if( nsrTitle != null ) {
+	nsrTitle.innerHTML = text;
+	nsrTitle.className = className;
+    }  else {
+	alert( 'Could not find title object' );
+    }
+}
+</script>
+	</head>
+	<body onload='setHeaderText("table","admin.IT_Transaction")'>
+	
+	
+
+	
+	<table class='tableColumnList' cellspacing="0">
+	<tr>
+	<th nowrap="1">Column Name</th>
+	<th nowrap="1">Type</th>
+	<th nowrap="1">Default</th>
+	<th nowrap="1">Comment</th>
+	</tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1">
+		<img src="pkey16.gif" style="padding-right:4px"></img>
+		Guid</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TypeId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TenantId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    '00000000-0000-0000-0000-000000000002'
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		Number</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(100)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TransactionDate</td>
+	    
+	    <td class="columnType" nowrap="1">date
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		DeliveryDate</td>
+	    
+	    <td class="columnType" nowrap="1">date
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		DeliveryTime</td>
+	    
+	    <td class="columnType" nowrap="1">time
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TransactionYear</td>
+	    
+	    <td class="columnType" nowrap="1">smallint
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		FinancialYearPeriodId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ReferenceNr</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(1000)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		PlanningDate</td>
+	    
+	    <td class="columnType" nowrap="1">date
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		Notes</td>
+	    
+	    <td class="columnType" nowrap="1">long varchar
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TermOfPaymentId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CurrencyId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TotalPrice</td>
+	    
+	    <td class="columnType" nowrap="1">double
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TotalPriceTax</td>
+	    
+	    <td class="columnType" nowrap="1">double
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		Balance</td>
+	    
+	    <td class="columnType" nowrap="1">double
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CreateDate</td>
+	    
+	    <td class="columnType" nowrap="1">date
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CreateTime</td>
+	    
+	    <td class="columnType" nowrap="1">time
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		UpdateDate</td>
+	    
+	    <td class="columnType" nowrap="1">date
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		UpdateTime</td>
+	    
+	    <td class="columnType" nowrap="1">time
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CreateUserName</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(255)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CreateUserId</td>
+	    
+	    <td class="columnType" nowrap="1">integer
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		UpdateUserName</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(255)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		UpdateUserId</td>
+	    
+	    <td class="columnType" nowrap="1">integer
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsTransferredToAccounting</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsLocked</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsDeleted</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsPaid</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsCanceled</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		DeliverToText</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(255)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		BillToText</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(255)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		FinancialPersonalAccountId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Customer personal account
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		FinancialContactId</td>
+	    
+	    <td class="columnType" nowrap="1">bigint
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		FinancialPhysicalAddressId</td>
+	    
+	    <td class="columnType" nowrap="1">bigint
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		DeliveryContactId</td>
+	    
+	    <td class="columnType" nowrap="1">bigint
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		DeliveryContactPhysicalAddressId</td>
+	    
+	    <td class="columnType" nowrap="1">bigint
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		InvoiceContactId</td>
+	    
+	    <td class="columnType" nowrap="1">bigint
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		InvoiceContactPhysicalAddressId</td>
+	    
+	    <td class="columnType" nowrap="1">bigint
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		PayerContactId</td>
+	    
+	    <td class="columnType" nowrap="1">bigint
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		PayerContactPhysicalAddressId</td>
+	    
+	    <td class="columnType" nowrap="1">bigint
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		DeliveryPersonalAccountId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		InvoicePersonalAccountId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		PayerPersonalAccountId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		DocumentPostalDispachPhysicalAddressId</td>
+	    
+	    <td class="columnType" nowrap="1">bigint
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsGrossTransaction</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CashDiscountTotal</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		PaymentMethodId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CashDiscountPercentValue</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		SubtypeId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ConvertState</td>
+	    
+	    <td class="columnType" nowrap="1">smallint
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		Ident</td>
+	    
+	    <td class="columnType" nowrap="1">bigint
+	    </td>
+	    <td class="columnDefault">
+	    autoincrement
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		State</td>
+	    
+	    <td class="columnType" nowrap="1">smallint
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		GlobalTransactionId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		DocumentId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ResponsibleId</td>
+	    
+	    <td class="columnType" nowrap="1">bigint
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		RepresentativeGroupId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TotalPriceNet</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TotalPriceGross</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		FinancialYearPeriodWaWiId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TransactionYearWaWi</td>
+	    
+	    <td class="columnType" nowrap="1">integer
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		PeriodNumberWaWi</td>
+	    
+	    <td class="columnType" nowrap="1">integer
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		PeriodNumberFiBu</td>
+	    
+	    <td class="columnType" nowrap="1">integer
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsPrinted</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		Sign</td>
+	    
+	    <td class="columnType" nowrap="1">smallint
+	    </td>
+	    <td class="columnDefault">
+	    1
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		SignedTotalPriceNet</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		SignedTotalPriceGross</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		SignedTotalPrice</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		SignedTotalPriceTax</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		OwnerId</td>
+	    
+	    <td class="columnType" nowrap="1">integer
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		UserReadAccess</td>
+	    
+	    <td class="columnType" nowrap="1">varbit(32767)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		UserWriteAccess</td>
+	    
+	    <td class="columnType" nowrap="1">varbit(32767)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		UserFullAccess</td>
+	    
+	    <td class="columnType" nowrap="1">varbit(32767)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		GroupReadAccess</td>
+	    
+	    <td class="columnType" nowrap="1">varbit(32767)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		GroupWriteAccess</td>
+	    
+	    <td class="columnType" nowrap="1">varbit(32767)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		GroupFullAccess</td>
+	    
+	    <td class="columnType" nowrap="1">varbit(32767)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsExported</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsRoundFavorTax</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    1
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		StandingOrderId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsExportedAEins</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsValid</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    1
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		PersonalAccountGLAGroupId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		Barcode</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(200)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		AlternativeTermOfPayment</td>
+	    
+	    <td class="columnType" nowrap="1">date
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ManualVAT</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ManualVatDate</td>
+	    
+	    <td class="columnType" nowrap="1">timestamp
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ManualVATUser</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(250)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TransactionDateLocked</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TaxGroupGuid</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	</table>
+	
+	
+	</body></html>

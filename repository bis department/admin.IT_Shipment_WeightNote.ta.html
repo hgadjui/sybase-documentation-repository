@@ -1,0 +1,234 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <title>Simplic - admin.IT_Shipment_WeightNote</title>
+	    
+<link rel=stylesheet type="text/css" href="details.css">
+<script>
+function setHeaderText( className, text )
+{
+    nsrTitle = parent.header.document.getElementById( 'nsrTitle' );
+    if( nsrTitle != null ) {
+	nsrTitle.innerHTML = text;
+	nsrTitle.className = className;
+    }  else {
+	alert( 'Could not find title object' );
+    }
+}
+</script>
+	</head>
+	<body onload='setHeaderText("table","admin.IT_Shipment_WeightNote")'>
+	
+	
+
+	
+	<table class='tableColumnList' cellspacing="0">
+	<tr>
+	<th nowrap="1">Column Name</th>
+	<th nowrap="1">Type</th>
+	<th nowrap="1">Default</th>
+	<th nowrap="1">Comment</th>
+	</tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1">
+		<img src="pkey16.gif" style="padding-right:4px"></img>
+		Guid</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ShipmentGuid</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ItemId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		Amount</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TypeId</td>
+	    
+	    <td class="columnType" nowrap="1">unsigned smallint
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    0 = Beladung / 1 = Entladung / 2 = Kontrolle
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CreateDateTime</td>
+	    
+	    <td class="columnType" nowrap="1">timestamp
+	    </td>
+	    <td class="columnDefault">
+	    current timestamp
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		FirstWeighing</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 3)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		SecondWeighing</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 3)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		FirstDate</td>
+	    
+	    <td class="columnType" nowrap="1">date
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		SecondDate</td>
+	    
+	    <td class="columnType" nowrap="1">date
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		FirstTime</td>
+	    
+	    <td class="columnType" nowrap="1">time
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		SecondTime</td>
+	    
+	    <td class="columnType" nowrap="1">time
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		WeightNoteNumber</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(30)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	</table>
+	
+	
+	</body></html>

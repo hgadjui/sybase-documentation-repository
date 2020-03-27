@@ -1,0 +1,324 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <title>Simplic - admin.IT_Transaction_Subtype</title>
+	    
+<link rel=stylesheet type="text/css" href="details.css">
+<script>
+function setHeaderText( className, text )
+{
+    nsrTitle = parent.header.document.getElementById( 'nsrTitle' );
+    if( nsrTitle != null ) {
+	nsrTitle.innerHTML = text;
+	nsrTitle.className = className;
+    }  else {
+	alert( 'Could not find title object' );
+    }
+}
+</script>
+	</head>
+	<body onload='setHeaderText("table","admin.IT_Transaction_Subtype")'>
+	
+	
+
+	
+	<table class='tableColumnList' cellspacing="0">
+	<tr>
+	<th nowrap="1">Column Name</th>
+	<th nowrap="1">Type</th>
+	<th nowrap="1">Default</th>
+	<th nowrap="1">Comment</th>
+	</tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1">
+		<img src="pkey16.gif" style="padding-right:4px"></img>
+		Guid</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TypeId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ReportId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		SequenceId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		Number</td>
+	    
+	    <td class="columnType" nowrap="1">integer
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		Name</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(100)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CancelationSubtypeId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		DocumentTitleTemplate</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(2000)
+	    </td>
+	    <td class="columnDefault">
+	    '{Type.Name} {Number} | {TransactionDate:dd.MM.yyyy} / {FinancialPersonalAccount.Number} {FinancialContact.CompanyName}'
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ArchiveMode</td>
+	    
+	    <td class="columnType" nowrap="1">smallint
+	    </td>
+	    <td class="columnDefault">
+	    1
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ReportName</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(250)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		OutputConfigurationId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		BarcodeTemplate</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(200)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsWorkshopOrder</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		UseNumberReservation</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CustomeField2Template</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(200)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CustomeField1Template</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(200)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		BookingTextTemplate</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(200)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		SummarizeBookings</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    1
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		AccountingExportGroup</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(255)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	</table>
+	
+	
+	</body></html>

@@ -1,0 +1,894 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <title>Simplic - admin.IT_Tour</title>
+	    
+<link rel=stylesheet type="text/css" href="details.css">
+<script>
+function setHeaderText( className, text )
+{
+    nsrTitle = parent.header.document.getElementById( 'nsrTitle' );
+    if( nsrTitle != null ) {
+	nsrTitle.innerHTML = text;
+	nsrTitle.className = className;
+    }  else {
+	alert( 'Could not find title object' );
+    }
+}
+</script>
+	</head>
+	<body onload='setHeaderText("table","admin.IT_Tour")'>
+	
+	
+
+	
+	<table class='tableColumnList' cellspacing="0">
+	<tr>
+	<th nowrap="1">Column Name</th>
+	<th nowrap="1">Type</th>
+	<th nowrap="1">Default</th>
+	<th nowrap="1">Comment</th>
+	</tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1">
+		<img src="pkey16.gif" style="padding-right:4px"></img>
+		Guid</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TractorUnitId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		DriverId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TrailerId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		StartDate</td>
+	    
+	    <td class="columnType" nowrap="1">date
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		EndDate</td>
+	    
+	    <td class="columnType" nowrap="1">date
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		StartTime</td>
+	    
+	    <td class="columnType" nowrap="1">time
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		EndTime</td>
+	    
+	    <td class="columnType" nowrap="1">time
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ExtTourId</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(255)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ConsecutiveTourId</td>
+	    
+	    <td class="columnType" nowrap="1">bigint
+	    </td>
+	    <td class="columnDefault">
+	    autoincrement
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		GeneratedTourId</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(255)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		Description</td>
+	    
+	    <td class="columnType" nowrap="1">long varchar
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		StartAddressContactId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		EndAddressContactId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ERPOrderNr</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(255)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		Status</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    '00000000-0000-0000-0000-000000000000'
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CreateDateTime</td>
+	    
+	    <td class="columnType" nowrap="1">timestamp
+	    </td>
+	    <td class="columnDefault">
+	    current timestamp
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		UpdateDateTime</td>
+	    
+	    <td class="columnType" nowrap="1">timestamp
+	    </td>
+	    <td class="columnDefault">
+	    current timestamp
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ActualStartDate</td>
+	    
+	    <td class="columnType" nowrap="1">date
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Gibt das Ist-Start-Datum der Tour an, zum Beispiel durch Telematik ermittelt
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ActualStartTime</td>
+	    
+	    <td class="columnType" nowrap="1">time
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Gibt die Ist-Start-Zeit der Tour an, zum Beispiel durch Telematik ermittelt
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ActualEndDate</td>
+	    
+	    <td class="columnType" nowrap="1">date
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Gibt das Ist-Ende-Datum der Tour an, zum Beispiel durch Telematik ermittelt
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ActualEndTime</td>
+	    
+	    <td class="columnType" nowrap="1">time
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Gibt die Ist-Ende-Zeit der Tour an, zum Beispiel durch Telematik ermittelt
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsFinished</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    Gibt an, ob eine Tour abgefahren wurde oder nicht. Wird zum Beispiel für das Tour-Progress System verwendet
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		StartAddressLatitude</td>
+	    
+	    <td class="columnType" nowrap="1">decimal(9, 6)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		StartAddressLongitude</td>
+	    
+	    <td class="columnType" nowrap="1">decimal(9, 6)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		EndAddressLatitude</td>
+	    
+	    <td class="columnType" nowrap="1">decimal(9, 6)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		EndAddressLongitude</td>
+	    
+	    <td class="columnType" nowrap="1">decimal(9, 6)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsDeleted</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsStarted</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TenantId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    0x00000000000000000000000000000002
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		StartDayOfWeek</td>
+	    
+	    <td class="columnType" nowrap="1">integer
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CustomerContactId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		OwnerId</td>
+	    
+	    <td class="columnType" nowrap="1">integer
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		UserReadAccess</td>
+	    
+	    <td class="columnType" nowrap="1">varbit(32767)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		UserWriteAccess</td>
+	    
+	    <td class="columnType" nowrap="1">varbit(32767)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		UserFullAccess</td>
+	    
+	    <td class="columnType" nowrap="1">varbit(32767)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		GroupReadAccess</td>
+	    
+	    <td class="columnType" nowrap="1">varbit(32767)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		GroupWriteAccess</td>
+	    
+	    <td class="columnType" nowrap="1">varbit(32767)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		GroupFullAccess</td>
+	    
+	    <td class="columnType" nowrap="1">varbit(32767)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CarrierAddressContactId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TractorUnitRegistrationNumber</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(255)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TrailerRegistrationNumber</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(255)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsCollectingTour</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CustomPrice</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CalculatedPrice</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CarrierTariffId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		SetTourStartEndContactAutomatically</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    Gibt an, ob die Start- und Zieladresse automatisch ermittelt wird.
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		ExternalDriverPhoneNumber</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(255)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		HasBillableShipmentCarrier</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CreateUserId</td>
+	    
+	    <td class="columnType" nowrap="1">integer
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsFullLoad</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TotalCarrierPrice</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TotalPurchasePrice</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TotalToll</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TotalMargin</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TotalCustomerPrice</td>
+	    
+	    <td class="columnType" nowrap="1">numeric(20, 2)
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CarrierDispatcherId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	</table>
+	
+	
+	</body></html>

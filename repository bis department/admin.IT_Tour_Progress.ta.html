@@ -1,0 +1,360 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <title>Simplic - admin.IT_Tour_Progress</title>
+	    
+<link rel=stylesheet type="text/css" href="details.css">
+<script>
+function setHeaderText( className, text )
+{
+    nsrTitle = parent.header.document.getElementById( 'nsrTitle' );
+    if( nsrTitle != null ) {
+	nsrTitle.innerHTML = text;
+	nsrTitle.className = className;
+    }  else {
+	alert( 'Could not find title object' );
+    }
+}
+</script>
+	</head>
+	<body onload='setHeaderText("table","admin.IT_Tour_Progress")'>
+	
+	
+		<div class="comment">Enthält alle aktuellen Fahrten und deren Fortschritt zu einer Zugmaschine.</div>
+	    
+		<dl class="commentTags">
+		    
+		</dl>
+	    
+
+	
+	<table class='tableColumnList' cellspacing="0">
+	<tr>
+	<th nowrap="1">Column Name</th>
+	<th nowrap="1">Type</th>
+	<th nowrap="1">Default</th>
+	<th nowrap="1">Comment</th>
+	</tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1">
+		<img src="pkey16.gif" style="padding-right:4px"></img>
+		VehicleId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Gibt die FahrzeugId an. Ist immer eine Zugmaschine.
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		StartAddressId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Gibt die Startadresse der Fahrt an
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		EndAddressId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Gibt die Zieladresse der Fahrt an
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		TourId</td>
+	    
+	    <td class="columnType" nowrap="1">uniqueidentifier
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Gibt die Tour-Id an, die aktuell gefahren wird. Ist die Aktuelle Fahrt eine Leerfahrt, wird die nächste Tour angegeben
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		Distance</td>
+	    
+	    <td class="columnType" nowrap="1">integer
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Gibt die Distanz in Kilometer bis zum Zielort an
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		RequiredTimeInMinutes</td>
+	    
+	    <td class="columnType" nowrap="1">integer
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Gibt die Zeit an, die noch zum Ziel benötigt wird. Zwischenziele eingeschlossen
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CurrentLocationText</td>
+	    
+	    <td class="columnType" nowrap="1">varchar(100)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Gibt den Ort an, an dem sich das Fahrzeug aktuell befindet
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CurrentLongitude</td>
+	    
+	    <td class="columnType" nowrap="1">decimal(9, 6)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Aktuelle Longitude des Fahrzeugs
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		CurrentLatitude</td>
+	    
+	    <td class="columnType" nowrap="1">decimal(9, 6)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Aktuelle Latitude des Fahrzeugs
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsEmptyTour</td>
+	    
+	    <td class="columnType" nowrap="1">bigint
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    Gibt an, ob es eine Leerfahrt ist oder nicht.
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		LastProcessedTelematicFiles</td>
+	    
+	    <td class="columnType" nowrap="1">timestamp
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Gibt das Datum der Telematikinformationen an, die zuletzt verarbeitet wurde. Bei einem Durchlauf werden nur solche Daten analysiert, die neuer sind.
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		EndDate</td>
+	    
+	    <td class="columnType" nowrap="1">date
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Gibt das Enddatum einer Tour an
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		EndTime</td>
+	    
+	    <td class="columnType" nowrap="1">time
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    Gibt die Endzeit einer Tour an
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		DurationInMinutes</td>
+	    
+	    <td class="columnType" nowrap="1">integer
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		StartDate</td>
+	    
+	    <td class="columnType" nowrap="1">date
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		StartTime</td>
+	    
+	    <td class="columnType" nowrap="1">time
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		StartLatitude</td>
+	    
+	    <td class="columnType" nowrap="1">decimal(9, 6)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		StartLongitude</td>
+	    
+	    <td class="columnType" nowrap="1">decimal(9, 6)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		EndLatitude</td>
+	    
+	    <td class="columnType" nowrap="1">decimal(9, 6)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		EndLongitude</td>
+	    
+	    <td class="columnType" nowrap="1">decimal(9, 6)
+	    </td>
+	    <td class="columnDefault">
+	    
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	    <tr>
+	    
+		<td class="columnName" nowrap="1" style="padding-left:20px">
+		IsEndOfTours</td>
+	    
+	    <td class="columnType" nowrap="1">bit
+	    </td>
+	    <td class="columnDefault">
+	    0
+	    </td>
+	    <td>
+	    
+	    </td>
+	    </tr>
+	
+	</table>
+	
+	
+	</body></html>
